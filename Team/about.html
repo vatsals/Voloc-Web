@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <style>
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .spat {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    img {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        filter: gray;
+        -webkit-transition: all .6s ease;
+    }
+    
+    img:hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        filter: none;
+    }
+    
+    img#myImg {}
+    
+    img.high {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        filter: none;
+    }
+    
+    img.high:hover {
+        filter: grayscale(0.8);
+        -webkit-filter: grayscale(0.8);
+        filter: none;
+    }
+    
+    .container-fluid {
+        padding: 0px;
+    }
+    
+    .abc {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="wow fadeInDown" data-wow-delay="0.2s">
+        <h1 style="text-align: center;">ABOUT US</h1>
+    </div> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="abc col-md-2 col-sm-6 col-xs-12">
+                <a data-target="#demo-web" data-toggle="collapse" onclick="myFunc()"><img src="images/fac.jpg" class="img-responsive" id="hi1" alt="img1"></a>
+            </div>
+            <div class="abc col-md-2 col-sm-6 col-xs-12">
+                <a data-target="#demo-web" data-toggle="collapse" onclick="myFunc2()"><img src="images/holly.jpg" class="img-responsive" id="hi2" alt="img2"></a>
+            </div>
+            <div class="abc col-md-2 col-sm-6 col-xs-12">
+                <a data-target="#demo-web" data-toggle="collapse" onclick="myFunc3()"><img src="images/ravi.jpg" class="img-responsive" id="hi3" alt="img3"></a>
+            </div>
+            <div class="abc col-md-2 col-sm-6 col-xs-12">
+                <a data-target="#demo-web" data-toggle="collapse" onclick="myFunc4()"><img src="images/holly.jpg" class="img-responsive" id="hi4" alt="img4"></a>
+            </div>
+            <div class="abc col-md-2 col-sm-6 col-xs-12">
+                <a data-target="#demo-web" data-toggle="collapse" onclick="myFunc5()"><img src="images/holly.jpg" class="img-responsive" id="hi4" alt="img4"></a>
+            </div>
+            <div class="abc col-md-2 col-sm-6 col-xs-12">
+                <a data-target="#demo-web" data-toggle="collapse" onclick="myFunc6()"><img src="images/holly.jpg" class="img-responsive" id="hi4" alt="img4"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="demo-web" class="row collapse">
+            <div class="spat col-md-2 col-sm-6 col-xs-12" id="img-web-1">
+            </div>
+            <div class="spat col-md-2 col-sm-6 col-xs-12" id="img-web-2">
+            </div>
+            <div class="spat col-md-2 col-sm-6 col-xs-12" id="img-web-3">
+            </div>
+            <div class="spat col-md-2 col-sm-6 col-xs-12" id="img-web-4">
+            </div>
+            <div class="spat col-md-2 col-sm-6 col-xs-12" id="img-web-5">
+            </div>
+            <div class="spat col-md-2 col-sm-6 col-xs-12" id="img-web-5">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo" data-toggle="collapse"><img src="images/fac.jpg" class="img-responsive" alt="img1"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo2" data-toggle="collapse"><img src="images/holly.jpg" class="img-responsive" alt="img2"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo3" data-toggle="collapse"><img src="images/ravi.jpg" class="img-responsive" alt="img3"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo4" data-toggle="collapse"><img src="images/holly.jpg" class="img-responsive" alt="img2"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo4" data-toggle="collapse"><img src="images/holly.jpg" class="img-responsive" alt="img2"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo4" data-toggle="collapse"><img src="images/holly.jpg" class="img-responsive" alt="img2"></a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo" data-toggle="collapse"><img src="images/fac.jpg" class="img-responsive" alt="img1"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo2" data-toggle="collapse"><img src="images/holly.jpg" class="img-responsive" alt="img2"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo3" data-toggle="collapse"><img src="images/ravi.jpg" class="img-responsive" alt="img3"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo4" data-toggle="collapse"><img src="images/holly.jpg" class="img-responsive" alt="img2"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo4" data-toggle="collapse"><img src="images/holly.jpg" class="img-responsive" alt="img2"></a>
+        </div>
+        <div class="abc col-md-2 col-sm-6 col-xs-12">
+            <a href="#demo4" data-toggle="collapse"><img src="images/holly.jpg" class="img-responsive" alt="img2"></a>
+        </div>
+    </div>
+    <script>
+    var flag = 0;
+
+    function myFunc() {
+        if (flag == 0) {
+            $('#hi1').addClass("high");
+            $("#img-web-1").append("<img class='high img-responsive' id='apd-1' src='images/fac.jpg'/>");
+            $("#img-web-2").append("<img class='high img-responsive' id='apd-2' src='images/holly.jpg'/>");
+            $("#img-web-3").append("<img class='high img-responsive' id='apd-3' src='images/ravi.jpg'/>");
+            $("#img-web-4").append("<img class='high img-responsive' id='apd-4' src='images/fac.jpg'/>");
+            $("#img-web-5").append("<img class='high img-responsive' id='apd-5' src='images/fac.jpg'/>");
+            flag = 1;
+        } else {
+            $('#hi1').removeClass("high");
+            $("#apd-1").remove();
+            $("#apd-2").remove();
+            $("#apd-3").remove();
+            $("#apd-4").remove();
+            $("#apd-5").remove();
+            flag = 0;
+        }
+    }
+
+    function myFunc2() {
+        if (flag == 0) {
+            $('#hi1').addClass("high");
+            $("#img-web-1").append("<img class='high img-responsive' id='apd-1' src='images/fac.jpg'/>");
+            $("#img-web-2").append("<img class='high img-responsive' id='apd-2' src='images/holly.jpg'/>");
+            $("#img-web-3").append("<img class='high img-responsive' id='apd-3' src='images/ravi.jpg'/>");
+            $("#img-web-4").append("<img class='high img-responsive' id='apd-4' src='images/fac.jpg'/>");
+            $("#img-web-5").append("<img class='high img-responsive' id='apd-5' src='images/fac.jpg'/>");
+            flag = 1;
+        } else {
+            $('#hi1').removeClass("high");
+            $("#apd-1").remove();
+            $("#apd-2").remove();
+            $("#apd-3").remove();
+            $("#apd-4").remove();
+            $("#apd-5").remove();
+            flag = 0;
+        }
+    }
+
+    function myFunc3() {
+        if (flag == 0) {
+            $('#hi1').addClass("high");
+            $("#img-web-1").append("<img class='high img-responsive' id='apd-1' src='images/fac.jpg'/>");
+            $("#img-web-2").append("<img class='high img-responsive' id='apd-2' src='images/holly.jpg'/>");
+            $("#img-web-3").append("<img class='high img-responsive' id='apd-3' src='images/ravi.jpg'/>");
+            $("#img-web-4").append("<img class='high img-responsive' id='apd-4' src='images/fac.jpg'/>");
+            $("#img-web-5").append("<img class='high img-responsive' id='apd-5' src='images/fac.jpg'/>");
+            flag = 1;
+        } else {
+            $('#hi1').removeClass("high");
+            $("#apd-1").remove();
+            $("#apd-2").remove();
+            $("#apd-3").remove();
+            $("#apd-4").remove();
+            $("#apd-5").remove();
+            flag = 0;
+        }
+    }
+
+    function myFunc4() {
+        if (flag == 0) {
+            $('#hi1').addClass("high");
+            $("#img-web-1").append("<img class='high img-responsive' id='apd-1' src='images/fac.jpg'/>");
+            $("#img-web-2").append("<img class='high img-responsive' id='apd-2' src='images/holly.jpg'/>");
+            $("#img-web-3").append("<img class='high img-responsive' id='apd-3' src='images/ravi.jpg'/>");
+            $("#img-web-4").append("<img class='high img-responsive' id='apd-4' src='images/fac.jpg'/>");
+            $("#img-web-5").append("<img class='high img-responsive' id='apd-5' src='images/fac.jpg'/>");
+            flag = 1;
+        } else {
+            $('#hi1').removeClass("high");
+            $("#apd-1").remove();
+            $("#apd-2").remove();
+            $("#apd-3").remove();
+            $("#apd-4").remove();
+            $("#apd-5").remove();
+            flag = 0;
+        }
+    }
+
+    function myFunc5() {
+        if (flag == 0) {
+            $('#hi1').addClass("high");
+            $("#img-web-1").append("<img class='high img-responsive' id='apd-1' src='images/fac.jpg'/>");
+            $("#img-web-2").append("<img class='high img-responsive' id='apd-2' src='images/holly.jpg'/>");
+            $("#img-web-3").append("<img class='high img-responsive' id='apd-3' src='images/ravi.jpg'/>");
+            $("#img-web-4").append("<img class='high img-responsive' id='apd-4' src='images/fac.jpg'/>");
+            $("#img-web-5").append("<img class='high img-responsive' id='apd-5' src='images/fac.jpg'/>");
+            flag = 1;
+        } else {
+            $('#hi1').removeClass("high");
+            $("#apd-1").remove();
+            $("#apd-2").remove();
+            $("#apd-3").remove();
+            $("#apd-4").remove();
+            $("#apd-5").remove();
+            flag = 0;
+        }
+    }
+
+    function myFunc6() {
+        if (flag == 0) {
+            $('#hi1').addClass("high");
+            $("#img-web-1").append("<img class='high img-responsive' id='apd-1' src='images/fac.jpg'/>");
+            $("#img-web-2").append("<img class='high img-responsive' id='apd-2' src='images/holly.jpg'/>");
+            $("#img-web-3").append("<img class='high img-responsive' id='apd-3' src='images/ravi.jpg'/>");
+            $("#img-web-4").append("<img class='high img-responsive' id='apd-4' src='images/fac.jpg'/>");
+            $("#img-web-5").append("<img class='high img-responsive' id='apd-5' src='images/fac.jpg'/>");
+            flag = 1;
+        } else {
+            $('#hi1').removeClass("high");
+            $("#apd-1").remove();
+            $("#apd-2").remove();
+            $("#apd-3").remove();
+            $("#apd-4").remove();
+            $("#apd-5").remove();
+            flag = 0;
+        }
+    }
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
