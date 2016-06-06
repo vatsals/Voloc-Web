@@ -220,18 +220,17 @@ div.wrapper h6 {
     position: fixed;
     height: 100%;
     width: 100%;
-    left: 250px;
-    overflow: hidden;
     display: none;
+    right: 0;
     bottom:0;
-    overflow-y: hidden;
     z-index: -999;
     left: 0; 
     border: none;
 }
 
 iframe{
-    overflow: hidden;
+    margin-left: 250px;
+    overflow: visible;
 }
 
 
