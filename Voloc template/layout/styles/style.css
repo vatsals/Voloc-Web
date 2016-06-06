@@ -214,9 +214,29 @@ div.wrapper h6 {
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
 }
+/* Some styles for the meet the team iframe */
+
+.team-frame{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 250px;
+    overflow: hidden;
+    display: none;
+    bottom:0;
+    overflow-y: hidden;
+    z-index: -999;
+    left: 0; 
+    border: none;
+}
+
+iframe{
+    overflow: hidden;
+}
 
 
 /* The navigation menu links */
+
 
 #slider {
     padding-top: 40px;

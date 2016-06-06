@@ -13,43 +13,43 @@
     <script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="layout/scripts/jquery-photostack.js"></script>
     <style>
-    body {
-        font-family: 'Open Sans', sans-serif;
-    }
-    
-    a:hover {
-        text-decoration: none;
-    }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
     </style>
     <script type="text/javascript">
-    $(document).ready(function() {
-        $('.category').hover(
+        $(document).ready(function() {
+            $('.category').hover(
 
-            function() {
-                $(this).find('h2').attr('class', 'changedclass');
-                $(this).find('img').attr('class', 'addslide');
-            },
+                function() {
+                    $(this).find('h2').attr('class', 'changedclass');
+                    $(this).find('img').attr('class', 'addslide');
+                },
 
-            function() {
-                $(this).find('h2').attr('class', 'originalclass');
-                $(this).find('img').attr('class', 'removeslide');
-            }
-        );
+                function() {
+                    $(this).find('h2').attr('class', 'originalclass');
+                    $(this).find('img').attr('class', 'removeslide');
+                }
+                );
 
-    });
+        });
 
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        $("#top").attr('class', 'toporiginal');
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            $("#top").attr('class', 'toporiginal');
+            $('.team-frame').fadeIn(2000);
+        }
 
-    }
 
-
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        $("#top").attr('class', 'topchanged');
-    }
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            $("#top").attr('class', 'topchanged');
+        }
     </script>
 </head>
 
@@ -66,6 +66,7 @@
                 </div>
             </div>
         </div>
+        
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">Home</a>
@@ -76,41 +77,45 @@
             <a href="#">Contact Us</a>
             <a href="#">Team</a>
         </div>
-        <div class="wrapper col1">
+        <div class="container-fluid">
+            <iframe src="../Team/about.html" class="team-frame" scrolling="no"></iframe>
+            
+        </div>
+        <div class="wrapper col1" style="z-index:999;">
             <div id="featured_slide">
                 <div id="slider">
                     <span onclick="openNav()">
-                    <ul id="categories">
-                        <li class="category" onclick="openNav();">
-                            <a href="#" class="featured_slide"><img id="sld1" src="images/demo/la.jpg" alt=""></a>
-                            <h2 id="la" class="originalclass"><strong>Home</strong></h2>
-                        </li>
-                        <li class="category">
-                            <a href="#"><img id="sld2" src="images/demo/la.jpg" alt=""></a>
-                            <h2 id="la" class="originalclass"><strong>Courses</strong></h2>
-                        </li>
-                        <li class="category">
-                            <a href="#"><img id="sld3" src="images/demo/la.jpg" alt=""></a>
-                            <h2 id="la" class="originalclass"><strong>Quiz</strong></h2>
-                        </li>
-                        <li class="category">
-                            <a href="#"><img id="sld4" src="images/demo/la.jpg" alt=""></a>
-                            <h2 id="la" class="originalclass"><strong>News & Updates</strong></h2>
-                        </li>
-                        <li class="category">
-                            <a href="#"><img id="sld5" src="images/demo/la.jpg" alt=""></a>
-                            <h2 id="la" class="originalclass"><strong>About us</strong></h2>
-                        </li>
-                        <li class="category">
-                            <a href="#"><img id="sld6" src="images/demo/la.jpg" alt=""></a>
-                            <h2 id="la" class="originalclass"><strong>Contact us</strong></h2>
-                        </li>
-                        <li class="category">
-                            <a href="#"><img id="sld7" src="images/demo/la.jpg" alt=""></a>
-                            <h2 id="la" class="originalclass"><strong>Meet the Team</strong></h2>
-                        </li>
-                    </ul>
-                </span>
+                        <ul id="categories">
+                            <li class="category" onclick="openNav();">
+                                <a href="#" class="featured_slide"><img id="sld1" src="images/demo/la.jpg" alt=""></a>
+                                <h2 id="la" class="originalclass"><strong>Home</strong></h2>
+                            </li>
+                            <li class="category">
+                                <a href="#"><img id="sld2" src="images/demo/la.jpg" alt=""></a>
+                                <h2 id="la" class="originalclass"><strong>Courses</strong></h2>
+                            </li>
+                            <li class="category">
+                                <a href="#"><img id="sld3" src="images/demo/la.jpg" alt=""></a>
+                                <h2 id="la" class="originalclass"><strong>Quiz</strong></h2>
+                            </li>
+                            <li class="category">
+                                <a href="#"><img id="sld4" src="images/demo/la.jpg" alt=""></a>
+                                <h2 id="la" class="originalclass"><strong>News &amp; Updates</strong></h2>
+                            </li>
+                            <li class="category">
+                                <a href="#"><img id="sld5" src="images/demo/la.jpg" alt=""></a>
+                                <h2 id="la" class="originalclass"><strong>About us</strong></h2>
+                            </li>
+                            <li class="category">
+                                <a href="#"><img id="sld6" src="images/demo/la.jpg" alt=""></a>
+                                <h2 id="la" class="originalclass"><strong>Contact us</strong></h2>
+                            </li>
+                            <li class="category">
+                                <a href="../Team/about.html"><img id="sld7" src="images/demo/la.jpg" alt=""></a>
+                                <h2 id="la" class="originalclass"><strong>Meet the Team</strong></h2>
+                            </li>
+                        </ul>
+                    </span>
                     <a id="prev" class="prev disabled">
                         <img src="layout/styles/images/prev.png">
                     </a>
