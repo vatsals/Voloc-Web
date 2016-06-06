@@ -42,7 +42,6 @@
             document.getElementById("mySidenav").style.width = "250px";
             $("#top").attr('class', 'toporiginal');
             $('iframe').css('marginLeft','250px');
-            $('iframe').fadeIn(3000);
         }
 
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -50,96 +49,110 @@
             document.getElementById("mySidenav").style.width = "0";
             $("#top").attr('class', 'topchanged');
             $('iframe').animate({
-                marginLeft: 0
+                marginLeft : 0
             },1000);
         }
-    </script>
-</head>
+        /*$('html').mousemove(function(event){
 
-<body id="top">
-    <div class="backImg">
-        <div class="wrapper col1">
-            <div id="header" class="clear">
-                <div class="fl_left">
-                    <h1><a href="index.html">VOLOC</a></h1>
-                    <p>Vitcc Online Learning and Open Courseware</p>
+            if(event.pageX > 0.8*$(window).width()){
+                alert("HEllo");
+                $('iframe').animate({
+                    marginLeft : 0
+                },1000);
+            }
+            else{
+                $('iframe').animate({
+                    marginLeft : '250px'
+                },1000);
+            }
+            });*/
+        </script>
+    </head>
+
+    <body id="top">
+        <div class="backImg">
+            <div class="wrapper col1">
+                <div id="header" class="clear">
+                    <div class="fl_left">
+                        <h1><a href="index.html">VOLOC</a></h1>
+                        <p>Vitcc Online Learning and Open Courseware</p>
+                    </div>
+                    <div class="fl_right">
+                        <a href="#"><img src="images/demo/butt/468x60.gif" alt="logo" /></a>
+                    </div>
                 </div>
-                <div class="fl_right">
-                    <a href="#"><img src="images/demo/butt/468x60.gif" alt="logo" /></a>
+            </div>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">Quiz</a>
+                <a href="#">News</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Team</a>
+            </div>
+            <div class="container">
+                <iframe src="../Team/about.html" class="team-frame"></iframe>
+            </div>
+            <div class="wrapper col1" style="z-index:999;">
+                <div id="featured_slide">
+                    <div id="slider">
+                        <span onclick="openNav()">
+                            <ul id="categories">
+                                <li class="category" onclick="openNav();">
+                                    <a href="#" class="featured_slide"><img id="sld1" src="images/demo/la.jpg" alt=""></a>
+                                    <h2 id="la" class="originalclass"><strong>Home</strong></h2>
+                                </li>
+                                <li class="category">
+                                    <a href="#"><img id="sld2" src="images/demo/la.jpg" alt=""></a>
+                                    <h2 id="la" class="originalclass"><strong>Courses</strong></h2>
+                                </li>
+                                <li class="category">
+                                    <a href="#"><img id="sld3" src="images/demo/la.jpg" alt=""></a>
+                                    <h2 id="la" class="originalclass"><strong>Quiz</strong></h2>
+                                </li>
+                                <li class="category">
+                                    <a href="#"><img id="sld4" src="images/demo/la.jpg" alt=""></a>
+                                    <h2 id="la" class="originalclass"><strong>News &amp; Updates</strong></h2>
+                                </li>
+                                <li class="category">
+                                    <a href="#"><img id="sld5" src="images/demo/la.jpg" alt=""></a>
+                                    <h2 id="la" class="originalclass"><strong>About us</strong></h2>
+                                </li>
+                                <li class="category">
+                                    <a href="#"><img id="sld6" src="images/demo/la.jpg" alt=""></a>
+                                    <h2 id="la" class="originalclass"><strong>Contact us</strong></h2>
+                                </li>
+                                <li class="category">
+                                    <a href="../Team/about.html"><img id="sld7" src="images/demo/la.jpg" alt=""></a>
+                                    <h2 id="la" class="originalclass"><strong>Meet the Team</strong></h2>
+                                </li>
+                            </ul>
+                        </span>
+                        <a id="prev" class="prev disabled">
+                            <img src="layout/styles/images/prev.png">
+                        </a>
+                        <a id="next" class="next disabled">
+                            <img src="layout/styles/images/next.png">
+                        </a>
+                        <div style="clear:both"></div>
+                    </div>
+                    <!-- Use any element to open the sidenav -->
                 </div>
             </div>
         </div>
-        
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">Courses</a>
-            <a href="#">Quiz</a>
-            <a href="#">News</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Team</a>
-        </div>
-        <div class="container">
-            <iframe src="../Team/about.html" class="team-frame"></iframe>
-        </div>
-        <div class="wrapper col1" style="z-index:999;">
-            <div id="featured_slide">
-                <div id="slider">
-                    <span onclick="openNav()">
-                        <ul id="categories">
-                            <li class="category" onclick="openNav();">
-                                <a href="#" class="featured_slide"><img id="sld1" src="images/demo/la.jpg" alt=""></a>
-                                <h2 id="la" class="originalclass"><strong>Home</strong></h2>
-                            </li>
-                            <li class="category">
-                                <a href="#"><img id="sld2" src="images/demo/la.jpg" alt=""></a>
-                                <h2 id="la" class="originalclass"><strong>Courses</strong></h2>
-                            </li>
-                            <li class="category">
-                                <a href="#"><img id="sld3" src="images/demo/la.jpg" alt=""></a>
-                                <h2 id="la" class="originalclass"><strong>Quiz</strong></h2>
-                            </li>
-                            <li class="category">
-                                <a href="#"><img id="sld4" src="images/demo/la.jpg" alt=""></a>
-                                <h2 id="la" class="originalclass"><strong>News &amp; Updates</strong></h2>
-                            </li>
-                            <li class="category">
-                                <a href="#"><img id="sld5" src="images/demo/la.jpg" alt=""></a>
-                                <h2 id="la" class="originalclass"><strong>About us</strong></h2>
-                            </li>
-                            <li class="category">
-                                <a href="#"><img id="sld6" src="images/demo/la.jpg" alt=""></a>
-                                <h2 id="la" class="originalclass"><strong>Contact us</strong></h2>
-                            </li>
-                            <li class="category">
-                                <a href="../Team/about.html"><img id="sld7" src="images/demo/la.jpg" alt=""></a>
-                                <h2 id="la" class="originalclass"><strong>Meet the Team</strong></h2>
-                            </li>
-                        </ul>
-                    </span>
-                    <a id="prev" class="prev disabled">
-                        <img src="layout/styles/images/prev.png">
-                    </a>
-                    <a id="next" class="next disabled">
-                        <img src="layout/styles/images/next.png">
-                    </a>
-                    <div style="clear:both"></div>
-                </div>
-                <!-- Use any element to open the sidenav -->
+        <div class="footer">
+            <div class="footer-text">
+                &copy;VOLOC 2016
+            </div>
+            <div class="footer-icon">
+                <a class="btn" href="https://www.facebook.com/vitcvoloc/?fref=ts"><i class="fa fa-facebook"></i></a>
+                <a class="btn" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a class="btn" href="http://wordpress.com/"><i class="fa fa-wordpress"></i></a>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div class="footer-text">
-            &copy;VOLOC 2016
-        </div>
-        <div class="footer-icon">
-            <a class="btn" href="https://www.facebook.com/vitcvoloc/?fref=ts"><i class="fa fa-facebook"></i></a>
-            <a class="btn" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
-            <a class="btn" href="http://wordpress.com/"><i class="fa fa-wordpress"></i></a>
-        </div>
-    </div>
-</body>
+    </body>
 
-</html>
+    </html>
