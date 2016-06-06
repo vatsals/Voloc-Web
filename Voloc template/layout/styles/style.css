@@ -1,6 +1,6 @@
 @import url("featured_slide.css");
 html {
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 body {
