@@ -37,11 +37,14 @@
                 );
 
         });
-
+        function showTeam(){
+            $('.team-frame').css('marginLeft','250px');
+            $('.team-frame').fadeIn(1500);
+            $('#team').addClass('active');
+        }
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
             $("#top").attr('class', 'toporiginal');
-            $('iframe').css('marginLeft','250px');
         }
 
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -51,14 +54,8 @@
             $('iframe').animate({
                 marginLeft : 0
             },1000);
+            $('iframe').fadeOut(1500);
         }
-        /*$('html').mousemove(function(event){
-            if(event.pageX > 0.8*$(window).width()){
-                $('iframe').animate({
-                    marginLeft : 0
-                },1000);
-            }
-            });*/
         </script>
     </head>
 
@@ -84,7 +81,7 @@
                 <a href="#">News</a>
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
-                <a href="#">Team</a>
+                <a href="#" id="team">Team</a>
             </div>
             <div class="container">
                 <iframe src="../Team/about.html" class="team-frame"></iframe>
@@ -118,8 +115,8 @@
                                     <a href="#"><img id="sld6" src="images/demo/la.jpg" alt=""></a>
                                     <h2 id="la" class="originalclass"><strong>Contact us</strong></h2>
                                 </li>
-                                <li class="category">
-                                    <a href="../Team/about.html"><img id="sld7" src="images/demo/la.jpg" alt=""></a>
+                                <li class="category" onclick="showTeam()">
+                                    <a href="#"><img id="sld7" src="images/demo/la.jpg" alt=""></a>
                                     <h2 id="la" class="originalclass"><strong>Meet the Team</strong></h2>
                                 </li>
                             </ul>

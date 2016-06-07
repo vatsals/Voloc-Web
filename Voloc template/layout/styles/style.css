@@ -226,6 +226,7 @@ div.wrapper h6 {
     z-index: -999;
     left: 0; 
     border: none;
+    display: none;
 }
 
 /* The navigation menu links */
@@ -244,7 +245,9 @@ div.wrapper h6 {
     transition: 0.3s
 }
 
-
+.active{
+    color: #fff;
+}
 /* When you mouse over the navigation links, change their color */
 
 .sidenav a:hover,
