@@ -48,17 +48,17 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
             $("#top").attr('class', 'topchanged');
-            /*$('iframe').animate({
-                marginLeft : // add a function here that returns a value accordingly.
-            },1000);*/
+            $('iframe').animate({
+                marginLeft : 0
+            },1000);
         }
-        $('html').mousemove(function(event){
+        /*$('html').mousemove(function(event){
             if(event.pageX > 0.8*$(window).width()){
                 $('iframe').animate({
                     marginLeft : 0
                 },1000);
             }
-            });
+            });*/
         </script>
     </head>
 
