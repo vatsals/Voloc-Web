@@ -29,6 +29,7 @@ $(document).ready(function() {
             $("#top").attr('class', 'toporiginal');
 			$(".changeframes").fadeIn(1500);
 			$('.changeframes').css('marginLeft','250px');
+            $(".footer").hide(1500);
         }
 
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -39,4 +40,5 @@ $(document).ready(function() {
                 marginLeft : 0
             },1000);
             $('iframe').fadeOut(1500);
+            $(".footer").show(1500);
         }
