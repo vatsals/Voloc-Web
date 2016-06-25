@@ -1,0 +1,153 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: transparent;
+}
+
+body,
+input,
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.forgot {
+    text-align: right;
+    color: #4d4dff;
+}
+
+.login {
+    padding: 15px;
+    width: 500px;
+    min-height: 400px;
+    margin: 2% auto 0 auto;
+    background-color: #544945;
+    .heading {
+        text-align: center;
+        margin-top: 1%;
+        h2 {
+            font-size: 3em;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            padding-bottom: 5px;
+            text-shadow: 1px 1px 3px $shadow-color;
+        }
+    }
+    /*//heading  closed*/
+}
+
+
+/*//.login cosed*/
+
+.login {
+    border: 2px solid #544945;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.input-group {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-round {
+    background-color: #5a5656;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #f4f4f4;
+    display: block;
+    font-size: 20px;
+    height: 57px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 57px;
+    float: left;
+    line-height: 50px;
+    margin: -4px 0px 0px 0px;
+    border: 4px solid #a27fdb;
+}
+
+.facebook-before {
+    background-color: #0064ab;
+    background-image: url("fb.png");
+    background-repeat: no-repeat;
+    border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 3px 0px 0px 3px;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    color: #f4f4f4;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.facebook {
+    background-color: #0079ce;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    color: #f4f4f4;
+    cursor: pointer;
+    height: 50px;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+.gmail-before {
+    background-color: #189bcb;
+    background-image: url("gmail.png");
+    background-repeat: no-repeat;
+    border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 3px 0px 0px 3px;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    color: #f4f4f4;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.gmail {
+    background-color: #1bb2e9;
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    color: #f4f4f4;
+    cursor: pointer;
+    height: 50px;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+li {
+    display: inline;
+}
+
+h2 {
+    color: #a27fdb;
+}
+
+.or {
+    background-color: #3071a9;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    height: 55px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #a27fdb;
+    padding-bottom: 20px;
+}
