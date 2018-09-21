@@ -1,0 +1,11 @@
+e2e folder has unit & other testing related stuff. Angular 2 had 2 routers 2.0 & 3.0. So with new release of angular, they named it Angular 4 due to the release of Router 4.0 & hence no Angular 3 exists. 
+
+Lazy Loading reduces amount of data to be downloaded to render a page initially on a browser. Angular features: One way binding(state change from paretn down to child to rerender components), Dependency Injectin(like for service in component), Templates, Change detectn(Wrapper like Zone.js identifies async changes via user input, HTTP, timer), Components, Directives(on-hover, click-event). 
+
+AOT(Ahead of Time) Compiler: Angular uses JIT(Just In Time) Process and AOT works such that templates get compiled to DOM functn on server itself than compiling it on browser which saves loading time & are then sent to browser. 
+
+Component = Template + Class + MetaData. MetaData is defined with a decorator like @Component() or @NgModule(). If a class uses word exports it becomes ES Module. Decorator is functn that adds MetaData to class & its members. Directive is custom HTML tag like selector or template. 
+
+In app.module.ts, we import BrowserModule. This is an external module responsible for loading browser page on any change. 
+
+
